@@ -51,13 +51,7 @@ const Customer = sequelize.define('customer', {
             len: [5, 50]
         }
     },
-    house_number: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-        validate: {
-            max: 1000
-        }
-    },
+
     city: {
         type: DataTypes.STRING,
         allowNull: false,
