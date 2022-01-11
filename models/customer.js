@@ -32,75 +32,73 @@ const Customer = sequelize.define('customer', {
             len: [2, 80]
         }
     },
-    company_reg_number: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
-    },
-    personal_fiscal_number: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-            len: [16, 16]
-        }
-    },
-    street: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [5, 50]
-        }
-    },
+    // company_reg_number: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: true,
+    // },
+    // personal_fiscal_number: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     unique: true,
+    //     validate: {
+    //         len: [16, 16]
+    //     }
+    // },
+    // street: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     validate: {
+    //         len: [5, 50]
+    //     }
+    // },
 
-    city: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [5, 20]
-        }
-    },
-    zip_code: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        validate: {
-            len: [5, 8],
-            min: 1000
-        }
-    },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: { isEmail: true }
-    },
-    phone_number: {
-        type: DataTypes.BIGINT,
-        allowNull: true,
-        unique: true,
+    // city: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     validate: {
+    //         len: [5, 20]
+    //     }
+    // },
+    // zip_code: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: false,
+    //     validate: {
+    //         len: [5, 8],
+    //         min: 1000
+    //     }
+    // },
+    // email: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     unique: true,
+    //     validate: { isEmail: true }
+    // },
+    // phone_number: {
+    //     type: DataTypes.BIGINT,
+    //     allowNull: true,
+    //     unique: true,
 
-    },
-    mobile_phone: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-            isNumeric: true
-        }
-    },
-    birth_date: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    model3: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-    },
-    model4: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false
-    }
-
-
+    // },
+    // mobile_phone: {
+    //     type: DataTypes.STRING,
+    //     allowNull: false,
+    //     unique: true,
+    //     validate: {
+    //         isNumeric: true
+    //     }
+    // },
+    // birth_date: {
+    //     type: DataTypes.DATEONLY,
+    //     allowNull: false
+    // },
+    // model3: {
+    //     type: DataTypes.BOOLEAN,
+    //     allowNull: false
+    // },
+    // model4: {
+    //     type: DataTypes.BOOLEAN,
+    //     allowNull: false
+    // }
 }, {
 
 });
